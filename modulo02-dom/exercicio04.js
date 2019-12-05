@@ -1,8 +1,10 @@
 // Inicia arrays de nomes do exercicio
 var nomes = ["Diego", "Gabriel", "Lucas"]
 
-// TODO: Verificar utilidade
+
 var btnElement = document.getElementById("btn");
+
+var inputEnterElement = document.getElementById("nome");
 
 // Function para adicionar o elemento na lista
 function adicionarLista() {
@@ -51,4 +53,12 @@ window.addEventListener('load', function (event) {
 
 btn.addEventListener('click', function (event) {
     limparInput();
+});
+
+inputEnterElement.addEventListener('keyup', function (e) {
+    var key = e.which || e.keyCode;
+    if (key == 13) {
+        adicionar();
+        limparInput()
+    }
 });

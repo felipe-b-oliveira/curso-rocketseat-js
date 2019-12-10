@@ -5,6 +5,10 @@
   "license": "MIT",
   "dependencies": {
     "@babel/cli": "^7.7.5",
+    "@babel/core": "^7.7.5",
     "@babel/preset-env": "^7.7.5"
+  },
+  "scripts": {
+    "dev": "babel -w ./main.js -o ./bundle.js"
   }
 }

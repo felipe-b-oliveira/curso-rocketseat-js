@@ -6,9 +6,15 @@
   "dependencies": {
     "@babel/cli": "^7.7.5",
     "@babel/core": "^7.7.5",
-    "@babel/preset-env": "^7.7.5"
+    "@babel/plugin-proposal-object-rest-spread": "^7.7.4",
+    "@babel/preset-env": "^7.7.5",
+    "babel-loader": "^8.0.6"
   },
   "scripts": {
     "dev": "babel -w ./main.js -o ./bundle.js"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-async-to-generator": "^7.7.4",
+    "@babel/polyfill": "^7.7.0"
   }
 }

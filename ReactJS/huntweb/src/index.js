@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
+import './styles.css';
 import * as serviceWorker from './serviceWorker';
 
 // Rendereiza o primeiro componente chamado App e jogando o seu conteúdo para a div com id 'root'

@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Curso Javascript</title>
+    </head>
+    <body>
+        <script>
+            function retornaSexo(sexo) {
+                // M, F
+                // Masculino, Feminino
+
+                // == Verifica se os valores são iguais
+                // === Verifica se os valores e os tipos são iguais
+                
+                // if (sexo === 'M') {
+                //     return 'Masculino';
+                // }
+                // else if (sexo === 'F') {
+                //     return 'Feminino';
+                // }
+                // else
+                //     return 'Outro';
+
+                switch (sexo) {
+                    case 'M':
+                        return 'Masculino';
+                    case 'F':
+                        return 'Feminino';
+                    default:
+                        return 'Outro';
+                }
+            }
+
+            var resultado = retornaSexo('M');
+            console.log(resultado);
+        </script>
+    </body>
+</html>

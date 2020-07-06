@@ -1,31 +1,11 @@
-class List {
-    constructor() {
-        this.data = [];
-    }
+import * as funcoes from './funcoes';
+//import soma, {sub} from './funcoes';
+//import somaFunction from './soma';
 
-    add(data) {
-        this.data.push(data);
-        console.log(this.data);
-    }
-}
+//console.log(funcoes);
 
-class TodoList extends List {
-    constructor() {
-        // Chama o construtor da classe pai
-        super();
+console.log(funcoes.soma(1, 2));
+console.log(funcoes.sub(4, 2));
 
-        this.usuario = 'Felipe';
-    }
-
-    mostraUsuario() {
-        console.log(this.usuario);
-    }
-}
-
-var MinhaLista = new TodoList();
-
-document.getElementById('novotodo').onclick = function () {
-    MinhaLista.add('Novo todo');
-}
-
-MinhaLista.mostraUsuario();
+//console.log(soma(1, 2));
+//console.log(sub(4, 2));
